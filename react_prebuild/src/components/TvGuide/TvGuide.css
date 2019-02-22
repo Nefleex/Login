@@ -1,0 +1,138 @@
+.channels-main {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(150px, 250px));
+  grid-template-rows: auto;
+  grid-gap: 0.3em;
+  font-family: "Arial";
+  font-size: 14px;
+  justify-content: center;
+  min-height: 600px;
+}
+.date-select-container {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(150px, 250px));
+  grid-template-rows: auto;
+  grid-gap: 0.3em;
+  font-family: "Arial";
+  font-size: 14px;
+  justify-content: center;
+}
+.date-select-sub {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column: 1 / 2;
+}
+
+.date-select-unit-left {
+  max-height: inherit;
+  text-align: center;
+  margin-right: 3px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.date-select-unit-right {
+  box-sizing: border-box;
+}
+.header {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(150px, 250px));
+  grid-template-rows: auto;
+  grid-gap: 0.3em;
+  font-family: "Arial";
+  font-size: 14px;
+  justify-content: center;
+}
+
+.body {
+  background-color: #040405;
+  background-image: url("./bg1.jpg");
+  color: white;
+}
+
+.channel-item {
+  height: 100%;
+}
+
+.util-button {
+  background-color: #2d2f32;
+  border: white 1px solid;
+  color: white;
+  padding: 0.35em;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+.date-nav-button {
+  background-color: #2d2f32;
+  border: white 1px solid;
+  color: white;
+  padding: 0.35em;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  border-radius: 5px;
+}
+.info-box {
+  display: inline-flex;
+  align-items: center;
+}
+.date-display {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-disabled {
+  /* background-color: #2d2f32; */
+  background: rgba(45, 47, 50, 0.2);
+  color: rgba(45, 47, 50, 0.2);
+  border: rgba(45, 47, 50, 0.2);
+}
+
+.expired-shows {
+  margin: 0;
+}
+.nav-buttons {
+  grid-column: 4 / 5;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2px;
+  align-items: center;
+}
+
+@media screen and (max-width: 860px) {
+  .date-display {
+    display: none;
+    background-color: aqua;
+  }
+  .info-box {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .channels-main,
+  .date-select-container {
+    grid-template-columns: repeat(2, minmax(150px, 250px));
+  }
+  .nav-buttons {
+    grid-column: 2 / 3;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  body {
+    min-width: 270px;
+  }
+  .channels-main {
+    grid-template-columns: repeat(1, minmax(150px, 250px));
+  }
+  .date-select-container {
+    display: flex;
+    flex-direction: row;
+  }
+}

@@ -1,0 +1,20 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.main-banner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: rgb(204, 204, 204);
+  background: rgba(45, 47, 50, 0.7);
+}
+
+.guide-1 {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+.guide-2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}

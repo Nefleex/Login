@@ -1,0 +1,31 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.channel-main {
+  display: grid;
+  grid-template-rows: max-content auto;
+}
+.channel-content {
+  background-color: #2d2f32;
+  background: rgb(204, 204, 204);
+  background: rgba(45, 47, 50, 0.7);
+  border-radius: 2px;
+  border-left: 2px solid white;
+  border-right: 2px solid white;
+  padding: 2px;
+}
+.channel-title {
+  background-color: #2d2f32;
+  margin-bottom: 0.1em;
+  background: rgba(45, 47, 50, 0.7);
+  display: grid;
+
+  grid-template-columns: max-content auto;
+  grid-template-columns: 1fr;
+}
+.title-icon {
+  padding-left: 0.1em;
+  padding-right: 0.1em;
+}
