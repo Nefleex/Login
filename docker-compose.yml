@@ -1,0 +1,26 @@
+version: "3"
+services:
+  app:
+    container_name: node-app
+    restart: always
+    build: ./server/
+    environment:
+      - PORT=3000
+      - API_KEY=app_id=503e2195&app_key=b38968680e164a5e8d72f821b94cd9ff
+      - JWT_PRIVATE_KEY=3y28923hf923fh2038fh23f
+    ports:
+      - "3000:3000"
+    links:
+      - mongo
+  mongo:
+    container_name: mongo
+    image: mongo
+    restart: always
+    ports:
+      - "27017:27017"
+  front-end:
+    container_name: front
+    restart: always
+    build: ./front/
+    ports:
+      - "80:80"
