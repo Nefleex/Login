@@ -6,8 +6,8 @@ services:
     build: ./server/
     environment:
       - PORT=3000
-      - API_KEY=app_id=503e2195&app_key=b38968680e164a5e8d72f821b94cd9ff
-      - JWT_PRIVATE_KEY=3y28923hf923fh2038fh23f
+      - API_KEY=<YOUR API KEY HERE>
+      - JWT_PRIVATE_KEY=<JWT STRING HERE>
     ports:
       - "3000:3000"
     links:
